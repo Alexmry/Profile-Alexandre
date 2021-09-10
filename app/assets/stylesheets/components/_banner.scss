@@ -1,4 +1,9 @@
-.banner {
+.banner-right {
   // background-color: grey;
   background-image: linear-gradient(to right, #F4F4F4 72%, #CFD3D8 72%, #CFD3D8);
+}
+
+
+.banner-left {
+  background-image: linear-gradient(to right, #CFD3D8 28%, #F4F4F4 28%, #F4F4F4);
 }
