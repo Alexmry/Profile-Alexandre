@@ -8,6 +8,17 @@
   background-image: linear-gradient(to right, #CFD3D8 28%, #F4F4F4 28%, #F4F4F4);
 }
 
-.banner {
+.footer {
   background-color: #6D757D;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
