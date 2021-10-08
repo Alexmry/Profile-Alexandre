@@ -70,7 +70,7 @@
   display: inline-flex;
   align-items: center;
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: #6D757D;
   color: #FFF;
   padding: .25rem;
   border-radius: .17rem;
@@ -78,7 +78,9 @@
 }
 
 #syllabus:hover {
-  background-color: var(--first-color-alt);
+  background-color: #555C62;
+  text-decoration: none;
+
 }
 
 #website {
