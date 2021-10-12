@@ -39,16 +39,28 @@
   text-align: center;
 }
 
+.cv {
+  color: white;
+}
+
+.cv:hover {
+  text-decoration: none;
+  color: white;
+}
+
 .about__buttons {
   margin-top: 1rem;
   display: flex;
   align-items: center;
   display: inline-block;
   background-color: #6D757D;
-  font-color: white;
+  color: white;
   padding: .25rem;
   border-radius: .17rem;
-  font-weight: var(--font-small);
+}
+
+.about__buttons:hover {
+  background-color: #555C62;
 }
 
 // #syllabus {
