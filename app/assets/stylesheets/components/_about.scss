@@ -1,4 +1,10 @@
 /*==================== ABOUT ====================*/
+.container_about {
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .about__img {
   width: 200px;
   border-radius: .5rem;
@@ -7,7 +13,7 @@
 }
 
 .about__description {
-  text-align: center;
+  text-align: initial;
   margin-bottom: var(--mb-2-5);
 }
 
@@ -35,9 +41,32 @@
 .about__buttons {
   margin-top: 1rem;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  display: inline-block;
   background-color: #6D757D;
   font-color: white;
   padding: .25rem;
   border-radius: .17rem;
+  font-weight: var(--font-small);
 }
+
+// #syllabus {
+//   display: inline-flex;
+//   align-items: center;
+//   display: inline-block;
+//   background-color: #6D757D;
+//   color: #FFF;
+//   padding: .25rem;
+//   border-radius: .17rem;
+//   font-weight: var(--font-small);
+// }
+
+  // display: flex;
+  // justify-content: center;
+
+
+
+
+
+
+

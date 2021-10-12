@@ -1,4 +1,10 @@
 /*==================== QUALIFICATION ====================*/
+.container_qualifications {
+  max-width: 768px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .qualification__tabs {
   display: flex;
   justify-content: space-evenly;
