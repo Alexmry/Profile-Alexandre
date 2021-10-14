@@ -7,7 +7,7 @@
 }
 
 .about__img {
-  width: 255px;
+  width: 260px;
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
@@ -15,13 +15,13 @@
 
 .about__description {
   text-align: initial;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--mb-2-4);
 }
 
 .about__info {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: 1rem;
 }
 
 .about__info-title {
