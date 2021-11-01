@@ -1,10 +1,23 @@
 <!-- <h1>Contact me 🚀</h1> -->
+
+<script>
+const email = document.querySelector('.email-button');
+const phone = document.querySelector('.phone-button');
+
+function copyToClipboard(text) {
+  navigator.clipboard.writeText(text);
+}
+
+email.addEventListener('click', copyToClipboard);
+
+</script>
+
 <div class="contact d-flex align-items-center justify-content-center" style="height: 30rem; width: 100%">
   <div>
-    <div class="email-button d-flex align-items-center justify-content-center">
+    <div class="d-flex align-items-center justify-content-center">
       <p class="mr-3 pt-2">alexandreplmorey@gmail.com</p>
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <g class="nc-icon-wrapper" fill="#111111">
+          <g class="email-button nc-icon-wrapper" fill="#111111">
               <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
           </g>
       </svg>
