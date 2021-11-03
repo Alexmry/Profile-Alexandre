@@ -44,6 +44,8 @@ function copyText(htmlElement) {
   document.execCommand('copy');
 
   inputElement.parentNode.removeChild(inputElement);
+
+  alert("Copied the text: " + inputElement.value);
 }
 
 document.getElementById('copy-text-btn').onclick = function() {
