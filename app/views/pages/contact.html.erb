@@ -1,35 +1,50 @@
 <!-- <h1>Contact me 🚀</h1> -->
 
-<script>
-const email = document.querySelector('.email-button');
-const phone = document.querySelector('.phone-button');
 
-function copyToClipboard(text) {
-  navigator.clipboard.writeText(text);
-}
-
-email.addEventListener('click', copyToClipboard);
-
-</script>
 
 <div class="contact d-flex align-items-center justify-content-center" style="height: 30rem; width: 100%">
   <div>
     <div class="d-flex align-items-center justify-content-center">
-      <p class="mr-3 pt-2">alexandreplmorey@gmail.com</p>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-          <g class="email-button nc-icon-wrapper" fill="#111111">
-              <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
-          </g>
-      </svg>
-    </div>
-    <div class="phone-button d-flex align-items-center justify-content-center">
-      <p class="mr-3 pt-3">+33 6 21 21 16 73</p>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+      <p id="text" class="mr-3 pt-3">alexandreplmorey@gmail.com</p>
+      <button id="copy-text-btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
           <g class="nc-icon-wrapper" fill="#111111">
               <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
           </g>
-      </svg>
+      </svg></button>
+
+    </div>
+    <div class="d-flex align-items-center justify-content-center">
+      <p class="phone-button mr-3 pt-3">+33 6 21 21 16 73</p>
     </div>
   </div>
 </div>
 
+
+<script>
+  // console.log('hello');
+
+function copyText(htmlElement) {
+  if (!htmlElement) {
+    return;
+  }
+
+  let elementText = htmlElement.innerText;
+
+  let inputElement = document.createElement('input');
+  inputElement.setAttribute('value', elementText);
+  document.body.appendChild(inputElement);
+
+  inputElement.select();
+
+  document.execCommand('copy');
+
+  inputElement.parentNode.removeChild(inputElement);
+}
+
+document.getElementById('copy-text-btn').onclick = function() {
+  copyText(document.querySelector('#text'));
+  console.log('hello2');
+}
+
+
+</script>
