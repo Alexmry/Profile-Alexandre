@@ -24,6 +24,17 @@
   </div>
 </div>
 
+<style>
+
+/* .copy-text-btn:hover {
+  background-color: blue;
+  color: rgb(200,200,200);
+} */
+
+
+
+</style> 
+
 
 <script>
   // console.log('hello');
@@ -46,6 +57,13 @@ function copyText(htmlElement) {
   inputElement.parentNode.removeChild(inputElement);
 
   alert("Copied the text: " + inputElement.value);
+
+  // var tooltip = document.querySelector(".tooltip");
+  //   tooltip.classList.add('active');
+  //   setTimeout(() => {
+  //     tooltip.classList.remove('active');
+  //   }, 1500); 
+  // }
 }
 
 document.getElementById('copy-text-btn').onclick = function() {
